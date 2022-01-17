@@ -1,0 +1,22 @@
+{
+  "name": "node-api",
+  "version": "1.0.0",
+  "description": "A Node.js Api project",
+  "main": "./src/modules/server/main.ts",
+  "scripts": {
+    "build": "rm -fr ./build && chmod 755 ./node_modules/.bin/tsc -v && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm install && npm run build && node ./build/modules/server/main.js",
+    "dev": "nodemon"
+  },
+  "keywords": [],
+  "author": "Rodrigo Buttura <rodrigovbuttura@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.14.41",
+    "dotenv": "^8.2.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {}
+}
